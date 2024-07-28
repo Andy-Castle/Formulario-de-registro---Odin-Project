@@ -1,0 +1,59 @@
+/* Colores
+#596D48
+#E5E7EB
+
+*/
+
+@font-face {
+  font-family: ODIN;
+  src: url(./fonts/Norse-Bold.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.first-container {
+  background-image: url(/img/odinProjectimg.jpg);
+  width: 30%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.odin-logo {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 8.5rem;
+}
+
+.odin-logo > h1 {
+  font-family: ODIN, sans-serif;
+  color: white;
+  font-size: 70px;
+}
+
+.odin-logo > img {
+  width: 100px;
+  height: 125px;
+}
+
+.credits-container {
+  color: white;
+  position: absolute;
+  bottom: 0.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  a {
+    color: white;
+  }
+}

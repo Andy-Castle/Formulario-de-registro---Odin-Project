@@ -34,7 +34,11 @@
           <p class="second-phrase">You <em>know</em> you want to.</p>
         </div>
         <div class="form-container">
-          <form action="https://httpbin.org/post" method="post">
+          <form
+            id="myform"
+            action="https://httpbin.org/post"
+            method="post"
+            onsubmit="return sendForm()">
             <div class="content-form">
               <legend>Let's do this!</legend>
 
@@ -48,6 +52,7 @@
 
                   <label for="password">PASSWORD</label>
                   <input type="password" name="password" id="password" required />
+                  <span id="alert"></span>
                 </div>
 
                 <div class="right-container">
@@ -75,5 +80,22 @@
         </div>
       </div>
     </main>
+    <script>
+      const inputPassword = document.getElementById("password");
+      const inputPasswordConfirm = document.getElementById("confirm_password");
+      const buttonSubmit = document.getElementsByClassName("submit");
+      const spanAlert = document.getElementById("alert");
+
+      function sendForm() {
+        const formulario = document.getElementById("myform");
+        if (inputPassword.value != inputPasswordConfirm.value) {
+          spanAlert.innerText = "*Passwords do not match";
+          return false;
+        } else {
+          formulario.submit();
+          return true;
+        }
+      }
+    </script>
   </body>
 </html>

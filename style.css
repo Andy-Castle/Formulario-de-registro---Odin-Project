@@ -22,7 +22,7 @@ main {
 }
 
 .first-container {
-  background-image: url(/img/odinProjectimg.jpg);
+  background-image: url("./img/odinProjectimg.jpg");
   width: 30%;
   height: 100vh;
   background-size: cover;
@@ -170,4 +170,9 @@ input:focus {
     font-weight: bold;
     font-size: 16px;
   }
+}
+
+span {
+  color: red;
+  font-size: 12px;
 }

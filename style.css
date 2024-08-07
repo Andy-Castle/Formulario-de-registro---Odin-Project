@@ -18,6 +18,7 @@
 
 main {
   display: flex;
+  background-color: #f9fafb;
 }
 
 .first-container {
@@ -93,6 +94,7 @@ main {
   background-color: #ffffff;
   height: 230px;
   padding: 15px 20px 15px 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
 }
 
 .inputs {
@@ -138,7 +140,7 @@ input:invalid {
 }
 
 input:focus {
-  border-color: blue;
+  border: 2px solid blue;
 }
 
 .submit {
@@ -148,10 +150,10 @@ input:focus {
   border-radius: 5px;
   border: none;
   text-align: center;
+  box-shadow: 3px 3px 3px 0.5px rgba(0, 0, 0, 0.2);
 }
 
 .button-part {
-  background-color: #f9fafb;
   height: 30vh;
   padding: 30px 30px;
 

@@ -38,27 +38,33 @@
             <div class="content-form">
               <legend>Let's do this!</legend>
 
-              <label for="first-name">FIRST NAME</label>
-              <input type="text" name="first-name" id="first-name" required />
+              <div class="inputs">
+                <div class="left-container">
+                  <label for="first-name">FIRST NAME</label>
+                  <input type="text" name="first-name" id="first-name" required />
 
-              <label for="last-name">LAST NAME</label>
-              <input type="text" name="last-name" id="last-name" required />
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="email" id="email" required />
 
-              <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email" required />
+                  <label for="password">PASSWORD</label>
+                  <input type="password" name="password" id="password" required />
+                </div>
 
-              <label for="phone">PHONE NUMBER</label>
-              <input type="tel" name="phone" id="phone" required />
+                <div class="right-container">
+                  <label for="last-name">LAST NAME</label>
+                  <input type="text" name="last-name" id="last-name" required />
 
-              <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" required />
+                  <label for="phone">PHONE NUMBER</label>
+                  <input type="tel" name="phone" id="phone" required />
 
-              <label for="confirm_password">CONFIRM PASSWORD</label>
-              <input
-                type="password"
-                name="confirm_password"
-                id="confirm_password"
-                required />
+                  <label for="confirm_password">CONFIRM PASSWORD</label>
+                  <input
+                    type="password"
+                    name="confirm_password"
+                    id="confirm_password"
+                    required />
+                </div>
+              </div>
             </div>
             <div class="button-part">
               <button class="submit" type="submit">Create Account</button>

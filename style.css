@@ -95,6 +95,7 @@ main {
   height: 230px;
   padding: 15px 20px 15px 30px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
+  color: #1f2937;
 }
 
 .inputs {
@@ -120,7 +121,8 @@ legend {
 }
 
 label {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 500;
   font-size: 12px;
   margin-top: 10px;
